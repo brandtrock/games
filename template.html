@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Template for Simple Games</title>
+  <!-- JS Game Library -->
+  <script src="scripts/simpleGame.js"></script>
+  <script>
+    // Simple games template
+    var scene;
+    var sprite1; // rename sprite1
+    
+    function init() {
+      scene = new Scene();
+      sprite1 = new Sprite(scene, "images/IMAGE.png", 50, 50); // update IMAGE path
+      scene.start();
+    } // end init
+    
+    function update() {
+      scene.clear();
+      // handle events here
+      // update all the sprites
+      sprite1.update();
+    } // end update
+  </script>
+</head>
+<body onload="init()">
+</body>
+</html>
